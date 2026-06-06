@@ -1,0 +1,123 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f6f9;
+}
+
+/* Hero Section */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:64px 24px;
+
+    background:linear-gradient(
+        135deg,
+        #4f46e5,
+        #9333ea
+    );
+
+    text-align:center;
+}
+
+.hero h1{
+    color:white;
+    font-size:3rem;
+    margin-bottom:16px;
+}
+
+.hero p{
+    color:white;
+    margin-bottom:40px;
+    font-size:1.1rem;
+}
+/* Card */
+.card{
+
+    position:relative;
+     width:350px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid #e5e7eb;
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.10);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+/* Hover Effect */
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.18);
+}
+/* Image */
+.card img{
+    width:100%;
+    display:block;
+}
+/* Content */
+.card-content{
+    padding:24px;
+}
+.card-content h2{
+    margin-bottom:12px;
+}
+.card-content p{
+    color:#666;
+    margin-bottom:24px;
+    line-height:1.6;
+}
+/* Button */
+button{
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:linear-gradient(
+        to right,
+        #2563eb,
+        #7c3aed
+    );
+
+    transition:all 0.3s ease;
+}
+button:hover{
+transform:scale(1.05);
+box-shadow:
+        0 8px 20px rgba(37,99,235,0.4);
+}
+/* Positioning Example */
+.badge{
+position:absolute;
+top:15px;
+right:15px;
+background:#ef4444;
+color:white;
+padding:8px 12px;
+border-radius:50px;
+font-size:12px;
+font-weight:bold;
+}
